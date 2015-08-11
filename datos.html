@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+  <head>
+    <title>Diagnostico</title>
+    <meta charset = "UTF-8" />
+    <link rel="stylesheet" href="estillo.css">
+  </head>
+  <body>
+  
+                <form action="exportador.html" method="get"name="datos" id="datos">
+            <fieldset>
+                <legend><h1>Datos de la Empresaria</h1></legend>
+<table><tr><td>
+                <label for="nombre">Nombre Completo:</label></td>
+                <td><input type="text" name="nombre" id="nombre" required><br></td></tr>
+
+                <tr><td><label for="edad">Edad:</label></td>
+                <td><input type="text" name="edad" id="edad" pattern="\d{2}"  required maxlength="2"  required><br></td></tr>
+
+                <tr><td><label for="tel">Teléfono de Oficina:</label></td>
+                <td><input type="tel" name="tel" id="tel" 
+                       pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="puede ser 999-999-999 " required><br></td></tr>
+
+                <tr><td><label for="mov">Móvil:</label></td>
+                <td><input type="tel" name="mov" id="mov" 
+                       pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="puede ser 999-999-999 " required><br></td></tr>
+
+
+                <tr><td><label for="email">Correo electrónico:</label></td>
+                <td><input type="email" name="email" id="email"  required><br>  </td></tr>
+
+                
+                <tr><td><label for="city">Ciudad:</label></td>
+                <td><input type="text" name="city" id="city" required><br></td></tr>
+
+                <tr><td><label for="state">Estado:</label></td>
+                <td><input type="text" name="state" id="state"  ><br></td></tr>
+
+                <tr><td><label for="country">País:</label></td>
+                <td><input type="text" name="country" id="country" ><br></td></tr></table>
+
+               
+                </fieldset>
+</br>
+                <fieldset>
+                <legend><h1>Datos de la Empresa</h1></legend>
+<table><tr><td> 1. Ofrece productos o servicios</td>
+                <td>
+                <label class="radio-inline">
+                <input type="radio" id="radio-inline1" value="opcion_1"> Si
+                </label>
+                <label class="radio-inline">
+                <input type="radio" id="radio-inline2" value="opcion_2"> No
+                </label></td></tr>
+
+                <tr><td>2. Sector al que pertenece</td>
+                    <td><select name="sector">    
+                        <option value="v1" selected="selected">Agricultura (frutas, legumbres, leguminosas, plantas de ornato, flores, etc...)</option>
+                        <option value="v2">Ganadería (vacunos, bovinos, caprinos, porcinos, aves, apicultura, etc...)</option>
+                        <option value="v3">Pesca</option>
+                        <option value="v4">Artesanías (madera, barro, textil, palma, henequén, marinas, piel, etc...)</option>
+                        <option value="v5">Agroindustria (lácteos, cárnicos y embutidos, conservas,...)</option>
+                        <option value="v6">Purificadores de agua</option>
+                        <option value="v7">Comercio y servicios (mayoreo, menudeo, ambulante, mantenimiento y reparación de vehículos, servicios personales, servicios
+técnicos profesionales, etc...)</option>
+                        <option value="v8">Construcción</option>
+                        <option value="v9">Turismo (hoteles, restaurantes, fondas, bares, espectáculos, transporte turístico, etc...)</option>
+                        <option value="v10">Transporte (personas, bienes)</option>
+                        <option value="v11">Industria manufacturera (muebles, confección, artículos metálicos, maquinaria, calzado, curtidos, cuero, construcción de ve hículos
+y repuestos, etc...)</option>
+                       </select></td></tr>
+                       <tr><td>3. Está integrada su empresa en una sociedad mercantil</td>
+                        <td><label class="radio-inline">
+                <input type="radio" id="radio-inline1" value="opcion_1"> Si
+                </label>
+                <label class="radio-inline">
+                <input type="radio" id="radio-inline2" value="opcion_2"> No
+                </label></td></tr>
+
+                <tr><td>4. Tipo de sociedad mercantil</td>
+                    <td><select name="sociedad">    
+                        <option value="v1" selected="selected">Sociedad Anónima (SA).</option>
+                        <option value="v2">Sociedad Anónima de Capital Variable (SA de CV).</option>
+                        <option value="v3">Sociedad Anónima de Responsabilidad Limitada (SA de RL).</option>
+                        <option value="v4">Sociedad Cooperativa.</option>
+                        <option value="v5">Asociación de participación.</option>
+                        <option value="v6">Sociedad de producción rural.</option>
+                        <option value="v6">Otra</option>
+                        </select></td></tr>
+                        <tr><td>5. Fecha de creación de la empresa</td>
+                            <td><input type="date" name="fecha" id="fecha"> </td></tr>
+                        <tr><td>6. Número de empleados fijos trabajando en la empresa en los dos últimos años</td>
+                            <td><input type="radio" id="radio1" value="opcion_1"> De 1 a 15 Trabajadores</br>
+                                <input type="radio" id="radio2" value="opcion_2"> De 20 a 50 Trabajadores</br>
+                                <input type="radio" id="radio3" value="opcion_3"> De 51 a 100 Trabajadores</br>
+                                <input type="radio" id="radio4" value="opcion_4"> De 101 a 300 Trabajadores</br>
+                                <input type="radio" id="radio5" value="opcion_5"> Más de 300 Trabajadores</br></td></tr>
+
+                                <tr><td>7. Número de empleados temporales trabajando en la empresa en los dos últimos años</td>
+                            <td><input type="radio" id="radio1" value="opcion_1"> De 1 a 15 Trabajadores</br>
+                                <input type="radio" id="radio2" value="opcion_2"> De 20 a 50 Trabajadores</br>
+                                <input type="radio" id="radio3" value="opcion_3"> De 51 a 100 Trabajadores</br>
+                                <input type="radio" id="radio4" value="opcion_4"> De 101 a 300 Trabajadores</br>
+                                <input type="radio" id="radio5" value="opcion_5"> Más de 300 Trabajadores</br></td></tr>
+
+                            <tr><td> 9. Tiene RFC o NIT</td>
+                        <td><label class="radio-inline">
+                <input type="radio" id="radio-inline1" value="opcion_1"> Si
+                </label>
+                <label class="radio-inline">
+                <input type="radio" id="radio-inline2" value="opcion_2"> No
+                </label></td></tr>
+                <tr><td> 10. Su empresa cuenta con un representante legal (nacional o internacional)</td>
+                        <td><label class="radio-inline">
+                <input type="radio" id="radio-inline1" value="opcion_1"> Si
+                </label>
+                <label class="radio-inline">
+                <input type="radio" id="radio-inline2" value="opcion_2"> No
+                </label></td></tr></table>
+
+                        </fieldset></br>
+
+                <center><input name="submit" type="submit" value="Siguiente" id="submit"></center></br></br>
+
+                </form>
+    
+      </fieldset>     
+    </form>
+  </body>
+</html>

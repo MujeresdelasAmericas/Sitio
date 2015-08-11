@@ -1,0 +1,282 @@
+
+<!DOCTYPE HTML>
+<html lang = "en">
+  <head>
+    <title>Diagnostico</title>
+    <meta charset = "UTF-8" />
+     <link rel="stylesheet" href="estillo.css">
+
+<script languaje="javascript"> 
+function resultado(){
+var fin="no";
+var r=0;
+x=1;
+while(fin=="no"){
+g=document.getElementsByName('r'+x);
+if(g.length!=0){
+for(y=0;y<g.length;y++){
+e=0;
+if (g[y].checked==true){
+r+=parseInt(g[y].value);
+e=1;
+break;
+}
+}
+if(e==0){
+alert("Debe seleccionar al menos una opcion por grupo");
+break;
+break;
+}
+}else{
+fin="si";
+}
+x++;
+}
+document.getElementById('resultadox').innerHTML="Resultado:"+r/1; <!--PROMEDIO ADEMAS QUE QUE CON LA FUNCION "ROUND NO ME REDONDEA A DOS DECIMALES "-->
+}
+</script>
+</head>
+<body>
+
+<form method="post" action="competitividad.html" name="form1" id="form1">
+<fieldset>
+        <legend><h1>Dimensión potencial exportador</h1></legend>
+ 
+<table>
+            <tr><td>1. Ha tenido la intención de exportar</td>
+           <td><label class="radio-inline"><input type="radio" id="radio-inline1" name="r1" value="1" />1</label>            
+            <label  class="radio-inline"><input type="radio" id="radio-inline2" name="r1" value="2" />2</label>            
+            <label  class="radio-inline"><input type="radio" id="radio-inline3" name="r1" value="3" />3</label>          
+            <label  class="radio-inline"> <input type="radio" id="radio-inline4" name="r1"  value="4"/>4</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline5" name="r1"  value="5"/>5</label>
+            </td></tr>   
+
+            <tr><td>2. Ha realizado ejercicios de exportación </td> 
+            <td><label class="radio-inline"><input type="radio" id="radio-inline1" name="r2" value="1" />1</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline2" name="r2" value="2" />2</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline3" name="r2" value="3" />3</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline4" name="r2"  value="4"/>4</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline5" name="r2"  value="5"/>5</label>
+            </td> </tr>  
+              
+            <tr><td>3. Ha tenido impedimentos para exportar</td>                            
+            <td><label class="radio-inline"><input type="radio" id="radio-inline1" name="r3" value="1" />1</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline2" name="r3" value="2" />2</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline3" name="r3" value="3" />3</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline4" name="r3"  value="4"/>4</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline5" name="r3"  value="5"/>5</label>
+            </td> </tr>  
+
+            <tr><td> 4. Algún producto de los que produce o comercializa se exportan</td>                            
+            <td><label class="radio-inline"><input type="radio" id="radio-inline1" name="r4" value="1" />1</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline2" name="r4" value="2" />2</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline3" name="r4" value="3" />3</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline4" name="r4"  value="4"/>4</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline5" name="r4"  value="5"/>5</label>
+            </td> </tr>
+
+            <tr><td>5. Alguna vez su empresa ha sido propietaria de marcas</td>                            
+            <td><label class="radio-inline"><input type="radio" id="radio-inline1" name="r5" value="1" />1</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline2" name="r5" value="2" />2</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline3" name="r5" value="3" />3</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline4" name="r5"  value="4"/>4</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline5" name="r5"  value="5"/>5</label>
+            </td> </tr>
+
+            <tr><td>6. Alguna vez su empresa ha sido propietaria de patentes</td>                            
+            <td><label class="radio-inline"><input type="radio" id="radio-inline1" name="r6" value="1" />1</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline2" name="r6" value="2" />2</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline3" name="r6" value="3" />3</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline4" name="r6"  value="4"/>4</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline5" name="r6"  value="5"/>5</label>
+            </td> </tr>
+
+            <tr><td>7. Ha realizado algún plan estratégico de exportación (Metas, escenarios, planes de
+contingencia, etc.)</td>                            
+            <td><label class="radio-inline"><input type="radio" id="radio-inline1" name="r7" value="1" />1</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline2" name="r7" value="2" />2</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline3" name="r7" value="3" />3</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline4" name="r7"  value="4"/>4</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline5" name="r7"  value="5"/>5</label>
+            </td> </tr>
+
+            <tr><td>8. Ha realizado diferenciaciones en el producto, precio, promoción y distribución
+según mercados a los que pretende exportar</td>                            
+            <td><label class="radio-inline"><input type="radio" id="radio-inline1" name="r8" value="1" />1</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline2" name="r8" value="2" />2</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline3" name="r8" value="3" />3</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline4" name="r8"  value="4"/>4</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline5" name="r8"  value="5"/>5</label>
+            </td> </tr>
+
+            <tr><td>9. Tiene capital disponible para la producción y/o comercialización de su producto en
+el mercado internacional al que pretende exportar</td>                            
+            <td><label class="radio-inline"><input type="radio" id="radio-inline1" name="r9" value="1" />1</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline2" name="r9" value="2" />2</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline3" name="r9" value="3" />3</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline4" name="r9"  value="4"/>4</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline5" name="r9"  value="5"/>5</label>
+            </td> </tr>
+
+            <tr><td>10. Ha consultado estadísticas de exportación en su país en relación a su producto</td>                            
+            <td><label class="radio-inline"><input type="radio" id="radio-inline1" name="r10" value="1" />1</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline2" name="r10" value="2" />2</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline3" name="r10" value="3" />3</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline4" name="r10"  value="4"/>4</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline5" name="r10"  value="5"/>5</label>
+            </td> </tr>
+
+            <tr><td>11. Ha investigado sobre los acuerdos internacionales o tratados de comercio que el
+gobierno de su país a firmado en relación a su producto</td>                            
+            <td><label class="radio-inline"><input type="radio" id="radio-inline1" name="r11" value="1" />1</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline2" name="r11" value="2" />2</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline3" name="r11" value="3" />3</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline4" name="r11"  value="4"/>4</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline5" name="r11"  value="5"/>5</label>
+            </td> </tr>
+
+            <tr><td>12. Ha investigado sobre la demanda de su producto en el extranjero y las
+oportunidades de negocio</td>                            
+            <td><label class="radio-inline"><input type="radio" id="radio-inline1" name="r12" value="1" />1</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline2" name="r12" value="2" />2</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline3" name="r12" value="3" />3</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline4" name="r12"  value="4"/>4</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline5" name="r12"  value="5"/>5</label>
+            </td> </tr>
+
+            <tr><td>13. Ha acudido a las cámaras específicas por sector de su producto para solicitar la
+información en relación a su producto en el extranjero</td>                            
+            <td><label class="radio-inline"><input type="radio" id="radio-inline1" name="r13" value="1" />1</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline2" name="r13" value="2" />2</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline3" name="r13" value="3" />3</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline4" name="r13"  value="4"/>4</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline5" name="r13"  value="5"/>5</label>
+            </td> </tr>
+
+            <tr><td>14. Ha consultado los acuerdos de las cámaras de comercio bilaterales y los beneficios
+que puede tener en relación a su producto</td>                            
+            <td><label class="radio-inline"><input type="radio" id="radio-inline1" name="r14" value="1" />1</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline2" name="r14" value="2" />2</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline3" name="r14" value="3" />3</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline4" name="r14"  value="4"/>4</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline5" name="r14"  value="5"/>5</label>
+            </td> </tr>
+
+            <tr><td>15. Ha consultado los bancos de datos en internet para conocer la demanda externa de
+su producto</td>                            
+            <td><label class="radio-inline"><input type="radio" id="radio-inline1" name="r15" value="1" />1</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline2" name="r15" value="2" />2</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline3" name="r15" value="3" />3</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline4" name="r15"  value="4"/>4</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline5" name="r15"  value="5"/>5</label>
+            </td> </tr>
+
+            <tr><td>16. Ha identificado el mercado más adecuado a fin de comercializar sus productos en el
+exterior</td>                            
+            <td><label class="radio-inline"><input type="radio" id="radio-inline1" name="r16" value="1" />1</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline2" name="r16" value="2" />2</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline3" name="r16" value="3" />3</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline4" name="r16"  value="4"/>4</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline5" name="r16"  value="5"/>5</label>
+            </td> </tr>
+
+            <tr><td>17. Ha analizado y conoce la legislación de importación del país donde desea
+comercializar</td>                            
+            <td><label class="radio-inline"><input type="radio" id="radio-inline1" name="r17" value="1" />1</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline2" name="r17" value="2" />2</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline3" name="r17" value="3" />3</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline4" name="r17"  value="4"/>4</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline5" name="r17"  value="5"/>5</label>
+            </td> </tr>
+
+            <tr><td> 18. Ha consultado investigaciones de mercado existentes que le ayuden a no invertir
+mucho en nuevos estudios</td>                            
+            <td><label class="radio-inline"><input type="radio" id="radio-inline1" name="r18" value="1" />1</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline2" name="r18" value="2" />2</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline3" name="r18" value="3" />3</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline4" name="r18"  value="4"/>4</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline5" name="r18"  value="5"/>5</label>
+            </td> </tr>
+
+            <tr><td>19. Ha investigado y analizado el sistema económico, político, social y financiero a fin
+de evaluar si le conviene o no hacer negocio en otro país (es)</td>                            
+            <td><label class="radio-inline"><input type="radio" id="radio-inline1" name="r19" value="1" />1</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline2" name="r19" value="2" />2</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline3" name="r19" value="3" />3</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline4" name="r19"  value="4"/>4</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline5" name="r19"  value="5"/>5</label>
+            </td> </tr>
+
+            <tr><td>20. Ha asistido a ferias internacionales</td>                            
+            <td><label class="radio-inline"><input type="radio" id="radio-inline1" name="r20" value="1" />1</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline2" name="r20" value="2" />2</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline3" name="r20" value="3" />3</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline4" name="r20"  value="4"/>4</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline5" name="r20"  value="5"/>5</label>
+            </td> </tr>
+
+            <tr><td>21. Ha investigado y analizado las regulaciones no arancelarias que debe cumplir su
+producto para ingresar al mercado internacional</td>                            
+            <td><label class="radio-inline"><input type="radio" id="radio-inline1" name="r21" value="1" />1</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline2" name="r21" value="2" />2</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline3" name="r21" value="3" />3</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline4" name="r21"  value="4"/>4</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline5" name="r21"  value="5"/>5</label>
+            </td> </tr>
+
+            <tr><td>22. Ha identificado a sus competidores potenciales en los mercados internacionales</td>                            
+            <td><label class="radio-inline"><input type="radio" id="radio-inline1" name="r22" value="1" />1</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline2" name="r22" value="2" />2</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline3" name="r22" value="3" />3</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline4" name="r22"  value="4"/>4</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline5" name="r22"  value="5"/>5</label>
+            </td> </tr>
+
+            <tr><td> 23. La empresa ha tenido contacto con compradores potenciales en el mercado
+internacional</td>                            
+            <td><label class="radio-inline"><input type="radio" id="radio-inline1" name="r23" value="1" />1</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline2" name="r23" value="2" />2</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline3" name="r23" value="3" />3</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline4" name="r23"  value="4"/>4</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline5" name="r23"  value="5"/>5</label>
+            </td> </tr>
+
+            <tr><td>24. Ha analizado las tareas o necesidades de los posibles clientes a quienes venderá
+su producto en el exterior</td>                            
+            <td><label class="radio-inline"><input type="radio" id="radio-inline1" name="r24" value="1" />1</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline2" name="r24" value="2" />2</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline3" name="r24" value="3" />3</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline4" name="r24"  value="4"/>4</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline5" name="r24"  value="5"/>5</label>
+            </td> </tr>
+
+            <tr><td>25. En los dos últimos años su empresa se ha certificado en calidad o inocuidad (por
+ejemplo buenas prácticas agrícolas, iso 9000, iso 14,000, global Gap)</td>                            
+            <td><label class="radio-inline"><input type="radio" id="radio-inline1" name="r25" value="1" />1</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline2" name="r25" value="2" />2</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline3" name="r25" value="3" />3</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline4" name="r25"  value="4"/>4</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline5" name="r25"  value="5"/>5</label>
+            </td> </tr>
+
+            <tr><td>26. Ha analizado y conoce como se realizan operaciones financieras internacionales</td>                            
+            <td><label class="radio-inline"><input type="radio" id="radio-inline1" name="r26" value="1" />1</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline2" name="r26" value="2" />2</label>
+            <label  class="radio-inline"><input type="radio" id="radio-inline3" name="r26" value="3" />3</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline4" name="r26"  value="4"/>4</label>
+            <label  class="radio-inline"> <input type="radio" id="radio-inline5" name="r26"  value="5"/>5</label>
+            </td> </tr>
+              
+<tr>        
+<td><input name="ver" type="button" onClick="resultado()" value="Ver">        
+<div id="resultadox" align="center">
+ <input name="promedio" id="promedio" /> </td></tr><!-- en este input obtener el promedio -->
+ <tr>
+<td colspan="2" align="center"> <input name="submit" type="submit" value="Siguiente" id="submit"></td>
+</tr>
+</table> 
+ </fieldset>    
+          </form>
+
+          </body>
+          </html>
